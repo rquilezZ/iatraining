@@ -1,0 +1,12 @@
+
+
+<div>
+    <h1>Generador de Imágenes AI</h1>
+    <input [(ngModel)]="prompt" placeholder="Describe la imagen que deseas generar">
+    <button (click)="generateImage()">Generar Imagen</button>
+
+    @if (imageUrl) {
+      <h2>Imagen Generada:</h2>
+      <img [src]="imageUrl" alt="Imagen Generada por AI">
+    }
+  </div>
